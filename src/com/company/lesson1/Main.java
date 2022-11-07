@@ -1,7 +1,6 @@
-package com.company;
+package com.company.lesson1;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class Main {
     public static final int min = 5;
