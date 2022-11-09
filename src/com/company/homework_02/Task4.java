@@ -14,9 +14,8 @@ public class Task4 {
         System.out.println("Введите строку. Для выхода из программы введите exit");
         String str = console.nextLine();
         while (!str.equals("exit")) {
-            if (str.equals("")) {
-                System.out.println("Ошибка ввода, строка пустая");
-                throw new RuntimeException("Ошибка ввода, строка пустая");
+            if (str.isEmpty()){
+                throw new IllegalArgumentException("Строка пустая");
             }
             System.out.println(str);
             str = console.nextLine();

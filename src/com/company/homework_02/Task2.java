@@ -11,6 +11,8 @@ public class Task2 {
             System.out.println("catchedRes1 = " + catchedRes1);
         } catch (ArithmeticException e) {
             System.out.println("Catching exception: " + e);
+        } catch (ArrayIndexOutOfBoundsException e) { // добавил перехват ошибки если массив меньшего размера
+            System.out.println("Catching exception: " + e);
         }
     }
 }
